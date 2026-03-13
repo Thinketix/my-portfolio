@@ -403,7 +403,7 @@ nav a:hover, nav a.active { background: var(--ink); color: var(--parchment); }
         </div>
         <div class="project-action">
           <a href="https://github.com/Thinketix" target="_blank" class="btn-v solid">View Code →</a>
-          <a href="#" class="btn-v">Live Demo</a>
+          <a href="https://hotel-app-798g.vercel.app/" target="_blank" class="btn-v">Live Demo</a>
         </div>
       </div>
 
@@ -479,7 +479,7 @@ nav a:hover, nav a.active { background: var(--ink); color: var(--parchment); }
     </div>
     <div class="footer-links">
       <a href="https://github.com/Thinketix" target="_blank">github.com/Thinketix</a>
-      <a href="mailto:komronbekjovliyev@gmail.com">komronbekjovliyev@gmail.com</a>
+      <a href="/cdn-cgi/l/email-protection#305b5f5d425f5e52555b5a5f465c5949554670575d51595c1e535f5d"><span class="__cf_email__" data-cfemail="a7ccc8cad5c8c9c5c2cccdc8d1cbcedec2d1e7c0cac6cecb89c4c8ca">[email&#160;protected]</span></a>
     </div>
   </footer>
   <div class="footer-bottom">
@@ -490,7 +490,7 @@ nav a:hover, nav a.active { background: var(--ink); color: var(--parchment); }
   <div class="worn" style="transform:rotate(180deg)"></div>
 </div>
 
-<script>
+<script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script><script>
 const now = new Date();
 document.getElementById('dateEl').textContent =
   now.toLocaleDateString('en-GB',{day:'numeric',month:'long',year:'numeric'});
@@ -552,13 +552,4 @@ const navLinks=document.querySelectorAll('nav a');
 const scrollObs=new IntersectionObserver(entries=>{
   entries.forEach(e=>{
     if(e.isIntersecting){
-      navLinks.forEach(a=>a.classList.remove('active'));
-      const l=document.querySelector(`nav a[href="#${e.target.id}"]`);
-      if(l)l.classList.add('active');
-    }
-  });
-},{threshold:0.5});
-secs.forEach(s=>scrollObs.observe(s));
-</script>
-</body>
-</html>
+    
